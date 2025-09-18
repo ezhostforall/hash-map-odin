@@ -11,4 +11,16 @@ class HashMap {
       throw new Error('Trying to access index out of bounds');
     }
   }
+
+  hash(key) {
+    let hashCode = 0;
+
+    const primeNumber = 31;
+
+    for (let i = 0; i < key.length; i++) {
+      hashCode = (hashCode * primeNumber + key.charCodeAt(i)) % this.capacity;
+    }
+
+    return hashCode;
+  }
 }
