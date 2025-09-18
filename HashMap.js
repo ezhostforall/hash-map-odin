@@ -163,3 +163,5 @@ class HashMap {
     return entries;
   }
 }
+
+module.exports = HashMap;
