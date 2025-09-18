@@ -95,5 +95,26 @@ class HashMap {
     return false;
   }
 
-  
+  remove(key) {
+    const index = this.hash(key);
+    this.checkBounds(index);
+
+    const bucket = this.buckets[index];
+    if (!bucket) return false;
+
+    for (let i = 0; i < bucket.length; i++) {
+      if (bucket[i].key === key) {
+        bucket.splice(i, 1);
+        this.size--
+
+        if (bucket.length === 0) {
+          this.buckets[index] = null;
+        }
+        
+        return true;
+      }
+    }
+
+    return false;
+  }
 }
