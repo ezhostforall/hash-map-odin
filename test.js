@@ -75,3 +75,10 @@ console.log('\n=== Testing entries() method ===');
 const entries = test.entries();
 console.log('Entries:', entries);
 console.log('Entries length:', entries.length);
+
+console.log('\n=== Testing clear() method ===');
+console.log('Before clear - Length:', test.length());
+test.clear();
+console.log('After clear - Length:', test.length());
+console.log('After clear - has apple:', test.has('apple'));
+console.log('Keys after clear:', test.keys());
