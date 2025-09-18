@@ -86,8 +86,8 @@ class HashMap {
     const bucket = this.buckets[index];
     if (!bucket) return false;
 
-    for (let node of bucket) {
-      if (node.key === key) {
+    for (let {key: k} of bucket) {
+      if (k === key) {
         return true;
       }
     }

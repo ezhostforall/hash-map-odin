@@ -48,3 +48,8 @@ console.log('\n=== Testing get() method ===');
 console.log('apple:', test.get('apple'));
 console.log('moon:', test.get('moon'));
 console.log('nonexistent:', test.get('nonexistent'));
+
+console.log('\n=== Testing has() method ===');
+console.log('has apple:', test.has('apple'));
+console.log('has moon:', test.has('moon'));
+console.log('has nonexistent:', test.has('nonexistent'));
