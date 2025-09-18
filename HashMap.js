@@ -138,4 +138,16 @@ class HashMap {
     }
     return keys;
   }
+
+  values() {
+    const values = [];
+    for (const bucket of this.buckets) {
+      if (bucket) {
+        for (const [, value] of bucket) {
+          values.push(value);
+        }
+      }
+    }
+    return values;
+  }
 }
