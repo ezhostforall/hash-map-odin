@@ -131,7 +131,7 @@ class HashMap {
     const keys = [];
     for (const bucket of this.buckets) {
       if (bucket) {
-        for (const [key] of bucket) {
+        for (const {key} of bucket) {
           keys.push(key);
         }
       }
@@ -143,7 +143,7 @@ class HashMap {
     const values = [];
     for (const bucket of this.buckets) {
       if (bucket) {
-        for (const [, value] of bucket) {
+        for (const {value} of bucket) {
           values.push(value);
         }
       }
