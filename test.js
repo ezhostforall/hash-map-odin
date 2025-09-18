@@ -53,3 +53,15 @@ console.log('\n=== Testing has() method ===');
 console.log('has apple:', test.has('apple'));
 console.log('has moon:', test.has('moon'));
 console.log('has nonexistent:', test.has('nonexistent'));
+
+console.log('\n=== Testing remove() method ===');
+console.log('Before removal - has kite:', test.has('kite'));
+console.log('Remove kite:', test.remove('kite'));
+console.log('After removal - has kite:', test.has('kite'));
+console.log('Length after removal:', test.length());
+console.log('Remove nonexistent:', test.remove('nonexistent'));
+
+console.log('\n=== Testing keys() method ===');
+const keys = test.keys();
+console.log('Keys:', keys);
+console.log('Keys length:', keys.length);
