@@ -117,4 +117,13 @@ class HashMap {
 
     return false;
   }
+
+  length() {
+    return this.size;
+  }
+
+  clear() {
+    this.buckets = new Array(this.capacity).fill(null).map(() => []);
+    this.size = 0;
+  }
 }
