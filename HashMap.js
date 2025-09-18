@@ -62,5 +62,22 @@ class HashMap {
       }
     }
   }
+
+  get(key) {
+    const index = this.hash(key);
+    this.checkBounds(index);
+
+    const bucket = this.buckets[index];
+    if (!bucket) return null;
+
+    for (let [k, value] of bucket) {
+      if (k === key) {
+        return value;
+      }
+    }
+
+    return null;
+  }
+
   
 }
