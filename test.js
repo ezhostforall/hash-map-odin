@@ -1,4 +1,6 @@
-const test = new HashMap() // or HashMap() if using a factory
+const HashMap = require('./HashMap');
+
+const test = new HashMap() 
 
 test.set('apple', 'red')
 test.set('banana', 'yellow')
