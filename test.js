@@ -43,3 +43,8 @@ console.log('Before overwrite - dog:', test.get('dog'));
 test.set('dog', 'dark brown');
 console.log('After overwrite - dog:', test.get('dog'));
 console.log('Length after overwrite:', test.length());
+
+console.log('\n=== Testing get() method ===');
+console.log('apple:', test.get('apple'));
+console.log('moon:', test.get('moon'));
+console.log('nonexistent:', test.get('nonexistent'));
