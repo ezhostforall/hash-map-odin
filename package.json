@@ -1,0 +1,12 @@
+{
+  "name": "hash-map-odin",
+  "version": "1.0.0",
+  "description": "Odin Hash Map project",
+  "main": "HashMap.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node test.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
