@@ -70,9 +70,9 @@ class HashMap {
     const bucket = this.buckets[index];
     if (!bucket) return null;
 
-    for (let [k, value] of bucket) {
+    for (let {k, v} of bucket) {
       if (k === key) {
-        return value;
+        return v;
       }
     }
 
