@@ -23,4 +23,24 @@ class HashMap {
 
     return hashCode;
   }
+
+  set(key, value) {
+    const index = this.hash(key);
+    this.checkBounds(index);
+
+    if (!this.buckets[index]) {
+      this.buckets[index] = [];
+    }
+
+    const bucket = this.buckets[index];
+    for (let node of bucket) {
+      if (node.key === key) {
+        node.value = value;
+        return;
+      }
+    }
+
+    bucket.push({ key, value });
+    this.size++;
+  }
 }
