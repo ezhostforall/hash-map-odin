@@ -36,3 +36,6 @@ console.log('Before expansion - Length:', test.length(), 'Capacity:', test.capac
 test.set('moon', 'silver');
 console.log('After expansion - Length:', test.length(), 'Capacity:', test.capacity);
 console.log('New load factor:', test.length() / test.capacity);
+
+console.log('\n=== Testing Overwrite (after expansion) ===');
+console.log('Before overwrite - dog:', test.get('dog'));
