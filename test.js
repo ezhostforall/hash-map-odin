@@ -65,3 +65,13 @@ console.log('\n=== Testing keys() method ===');
 const keys = test.keys();
 console.log('Keys:', keys);
 console.log('Keys length:', keys.length);
+
+console.log('\n=== Testing values() method ===');
+const values = test.values();
+console.log('Values:', values);
+console.log('Values length:', values.length);
+
+console.log('\n=== Testing entries() method ===');
+const entries = test.entries();
+console.log('Entries:', entries);
+console.log('Entries length:', entries.length);
