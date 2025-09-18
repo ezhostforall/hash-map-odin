@@ -39,3 +39,7 @@ console.log('New load factor:', test.length() / test.capacity);
 
 console.log('\n=== Testing Overwrite (after expansion) ===');
 console.log('Before overwrite - dog:', test.get('dog'));
+
+test.set('dog', 'dark brown');
+console.log('After overwrite - dog:', test.get('dog'));
+console.log('Length after overwrite:', test.length());
