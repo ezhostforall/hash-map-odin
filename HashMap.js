@@ -56,7 +56,7 @@ class HashMap {
 
     for (const bucket of oldBuckets) {
       if (bucket) {
-        for (const [key, value] of bucket) {
+        for (const {key, value} of bucket) {
           this.set(key, value);
         }
       }
