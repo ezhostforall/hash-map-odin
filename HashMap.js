@@ -155,7 +155,7 @@ class HashMap {
     const entries = [];
     for (const bucket of this.buckets) {
       if (bucket) {
-        for (const [key, value] of bucket) {
+        for (const {key, value} of bucket) {
           entries.push([key, value]);
         }
       }
